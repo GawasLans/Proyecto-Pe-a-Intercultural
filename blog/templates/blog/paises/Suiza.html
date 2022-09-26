@@ -1,0 +1,28 @@
+{% load static %}
+
+<html>
+<head>
+<title> Suiza </title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+<link rel="stylesheet" href="{% static 'css/fontello.css' %}">
+<link rel="stylesheet" href="{% static 'css/menumañana.css' %}">
+</head>
+<body background="https://1.bp.blogspot.com/-fBvCIc4Uxn8/XRsqjmlzjqI/AAAAAAAAEeg/a_TfmQmnS1sRX8RM181f7nuNLvm6BhjHgCLcBGAs/w1200-h630-p-k-no-nu/suiza.jpg" 
+style="background-repeat: no-repeat; background-position: top center; background-size: cover;" text="black">
+<header>
+    <div class="contenedor">
+        <h1 class="icon-flag">Peña Intercultural <br></h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="icon-menu-2" for="menu-bar"></label>
+        <nav class="menu">
+          <a href="{% url 'vista_inicio' %}">Inicio</a>
+         <a href="{% url 'vista_mañana' %}">Turno Mañana</a>
+         <a href="{% url 'vista_tarde' %}">Turno Tarde</a>
+        </nav>
+    </div>
+</header>
+</body>
+</html>
+  

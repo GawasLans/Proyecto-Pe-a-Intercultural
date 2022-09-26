@@ -1,0 +1,144 @@
+{% load static %}
+<html>
+    <head>
+        <title> Turno Tarde</title>
+        <link rel="stylesheet" href="{% static 'css/fontello.css' %}">
+        <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+        <link rel="stylesheet" href="{% static 'css/menumañana.css' %}">        
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body background="{% static 'imagenes/fondo.webp' %}" style="background-repeat: no-repeat; background-position:center center; background-size: 100% 100%;">
+        <header>
+            <div class="contenedor">
+                <h1 class="icon-flag">Peña Intercultural <br></h1>
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu-2" for="menu-bar"></label>
+                <nav class="menu">
+                  <a href="{% url 'vista_inicio' %}">Inicio</a>
+                 <a href="{% url 'vista_mañana' %}">Turno Mañana</a>
+                 <a href="{% url 'vista_tarde' %}">Turno Tarde</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="banner">
+                   <img src="{% static 'imagenes/Escuela.jpg' %}">
+                   <div class="contenedor">
+                    <h2>Escuela Normal Superior Nº11</h2>
+                   </div>
+            </section>
+    
+            <section id="bienvenidos">
+                <h2> Turno Tarde </h2>
+                <p> Aqui solo se encuentran cursos y sus respectivo pais del turno tarde. </p>
+            </section>
+
+            <section id="parte1">
+                <div class="contenedor">
+                    <article>
+                        <a href="{% url 'vista_cuba' %}"> <img src="{% static 'imagenes/Cuba.webp' %}"> </a>
+                         <h4> Curso: 1°E <br>
+                              Profe: Pfau Dayane / <br> Flores Marcela <br>
+                              Paìs: Cuba
+                        </h4>
+                       </article>
+                       <article>
+                        <a href="{% url 'vista_kuwait' %}"> <img src="{% static 'imagenes/Kuwait.jpg' %}"> </a>
+                         <h4>Curso: 1ºF <br>
+                             Profe: Gladys Sánchez <br>
+                             País: Kuwait 
+                       </h4>
+                       </article>
+                       <article>
+                        <a href="{% url 'vista_indonesia' %}"> <img src="{% static 'imagenes/Indonesia.webp' %}"> </a>
+                         <h4> Curso: 1°G <br>
+                              Profe: Rotela Noelia <br>
+                              País: Indonesia </h4>
+                       </article>
+                <section id="parte1">
+                    <div class="contenedor">
+                           <article>
+                            <a href="{% url 'vista_grecia' %}"> <img src="{% static 'imagenes/Grecia.webp' %}"> </a>
+                             <h4> Curso: 1°H <br>
+                                  Profe: Gularte <br>
+                                  País: Grecia
+                            </h4>
+                           </article>
+                           <article>
+                            <a href="{% url 'vista_egipto' %}"> <img src="{% static 'imagenes/Egipto.jpg' %}"> </a>
+                             <h4>Curso: 2ºD <br>
+                                 Profe: Laura Ibáñez <br>
+                                 País: Egipto 
+                           </h4>
+                           </article>
+                           <article>
+                            <a href="{% url 'vista_africana' %}"> <img src="{% static 'imagenes/CentroAfricana.png' %}"> </a>
+                             <h4> Curso: 2ºE <br>
+                                  Profe: Susana Lemes <br>
+                                  País: Republica <br> CentroAfricana </h4>
+                           </article>
+                        </div>
+                    </section>
+                    <section id="parte1">
+                        <div class="contenedor">
+                           <article>
+                            <a href="{% url 'vista_brunei' %}"> <img src="{% static 'imagenes/Brunei.webp' %}"> </a>
+                             <h4> Curso: 2ºF <br>
+                                  Profe: Skala Ricardo <br>
+                                  País: Brunéi
+                            </h4>
+                           </article>
+                           <article>
+                            <a href="{% url 'vista_catar' %}"> <img src="{% static 'imagenes/Catar.webp' %}"> </a>
+                             <h4> Curso: 3ºC <br>
+                                  Profe: Marta Cabrera <br>
+                                  País: Catar
+                            </h4>
+                           </article>
+                           <article>
+                            <a href="{% url 'vista_turquia' %}"> <img src="{% static 'imagenes/Turquia.png' %}"> </a>
+                             <h4>Curso: 3ºD <br>
+                                 Profe: Tania <br> Yablonski <br>
+                                 País: Turquia 
+                           </h4>
+                           </article>
+                        </div>
+                    </section>
+                    <section id="parte1">
+                        <div class="contenedor">
+                            <article>
+                                <a href="{% url 'vista_venezuela' %}"> <img src="{% static 'imagenes/Venezuela.jpg' %}"> </a>
+                                 <h4>Curso: 4ºC <br>
+                                     Profe: Patricia <br> Slamovits <br>
+                                     País: Venezuela 
+                               </h4>
+                               </article>
+                               <article>
+                                <a href="{% url 'vista_coreadelsur' %}"> <img src="{% static 'imagenes/CoreaDelSur.jpg' %}"> </a>
+                                 <h4> Curso: 4ºD <br>
+                                      Profe: Patricia Ibarra <br>
+                                      País: Corea del Sur </h4>
+                               </article>
+                            </div>
+                        </section>
+                        <section id="parte1">
+                            <div class="contenedor">
+                               <article>
+                                <a href="{% url 'vista_Suiza' %}"> <img src="{% static 'imagenes/Suiza.jpg' %}"> </a>
+                                 <h4> Curso: 5ºC <br>
+                                      Profe: Victor Cano <br>
+                                      País: Suiza </h4>
+                               </article>
+                               <article>
+                                <a href="{% url 'vista_etiopia' %}"> <img src="{% static 'imagenes/Etiopia.png' %}"> </a>
+                                 <h4> Curso: 5ºD <br>
+                                      Profe: Patricia Ibarra / <br> Eloisa Machado <br>
+                                      País: Etiopía
+                                </h4>
+                               </article>
+                            </div>
+                        </section>
+            </main>
+    </body>
+    </html>

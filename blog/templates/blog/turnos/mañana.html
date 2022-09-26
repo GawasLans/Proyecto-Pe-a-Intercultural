@@ -1,0 +1,146 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Turno Mañana</title>
+        <link rel="stylesheet" href="{% static 'css/fontello.css' %}">
+        <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+        <link rel="stylesheet" href="{% static 'css/menumañana.css' %}">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body background="{% static 'imagenes/fondo.webp' %}" style="background-repeat: no-repeat; background-position:center center; background-size: 100% 100%;">
+        <header>
+            <div class="contenedor">
+                <h1 class="icon-flag">Peña Intercultural <br></h1>
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu-2" for="menu-bar"></label>
+                <nav class="menu">
+                  <a href="{% url 'vista_inicio' %}">Inicio</a>
+                 <a href="{% url 'vista_mañana' %}">Turno Mañana</a>
+                 <a href="{% url 'vista_tarde' %}">Turno Tarde</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="banner">
+                   <img src="{% static 'imagenes/Escuela.jpg' %}">
+                   <div class="contenedor">
+                    <h2>Escuela Normal Superior Nº11</h2>
+                   </div>
+            </section>
+    
+            <section id="bienvenidos">
+                <h2> Turno Mañana </h2>
+                <p> Aqui solo se encuentran cursos y sus respectivo pais del turno mañana. </p>
+            </section>
+
+            <section id="parte1">
+                <div class="contenedor">
+                   <article>
+                   <a href="{% url 'vista_uzbekistan' %}"> <img src="{% static 'imagenes/Uzbekistan.svg' %}"> </a>
+                     <h4> Curso: 1°A <br>
+                         Profe: Padilla <br>
+                         País: Uzbekistán </h4>
+                   </article>
+                   <article>
+                     <a href="{% url 'vista_afganistan' %}"> <img src="{% static 'imagenes/Afganistan.jpg' %}"> </a>
+                     <h4> Curso: 1°B <br>
+                         Profe: Patricia Escobar / <br> Noelia Rodriguez <br>
+                         País: Afganistán
+                    </h4>
+                   </article>
+                   <article>
+                     <a href="{% url 'vista_belgica' %}"> <img src="{% static 'imagenes/Belgica.jpg' %}"> </a>
+                     <h4>Curso: 1°C <br>
+                         Profe: Paola Perini <br>
+                         País: Bélgica 
+                   </h4>
+                   </article>
+                </div>
+            </section>
+            <section id="parte1">
+                <div class="contenedor">
+                   <article>
+                    <a href="{% url 'vista_españa' %}"> <img src="{% static 'imagenes/España.webp' %}"> </a>
+                     <h4> Curso: 1°D <br>
+                          Profe: Lara Adriana / <br> Demetrio Ocampo <br>
+                          País: España </h4>
+                   </article>
+                   <article>
+                    <a href="{% url 'vista_lituania' %}"> <img src="{% static 'imagenes/Lituania.webp' %}"> </a>
+                     <h4>Curso: 2ºA <br>
+                         Profe: Daniela Velázquez <br>
+                         País: Lituania 
+                   </h4>
+                   </article>
+                   <article>
+                    <a href="{% url 'vista_yemen' %}"> <img src="{% static 'imagenes/Yemen.webp' %}"> </a>
+                     <h4> Curso: 2ºB <br>
+                          Profe: Paola Perini <br>
+                          País: Yemen </h4>
+                   </article>
+                </div>
+            </section>
+            <section id="parte1">
+                <div class="contenedor">
+                    <article>
+                        <a href="{% url 'vista_austria' %}"> <img src="{% static 'imagenes/Austria.jpg' %}"> </a>
+                         <h4> Curso: 2ºC <br>
+                              Profe: Hansen Marcela <br>
+                              País: Austria
+                        </h4>
+                       </article>
+                       <article>
+                        <a href="{% url 'vista_guatemala' %}"> <img src="{% static 'imagenes/Guatemala.jpg' %}"> </a>
+                         <h4>Curso: 3ºA <br>
+                             Profe: Celia Garcia <br>
+                             País: Guatemala 
+                       </h4>
+                       </article>
+                       <article>
+                        <a href="{% url 'vista_croacia' %}"> <img src="{% static 'imagenes/Croacia.jpg' %}"> </a>
+                         <h4> Curso: 3ºB <br>
+                              Profe: Cardozo Analía / <br> Carolina Xander <br>
+                              País: Croacia </h4>
+                       </article>
+                    </div>
+                </section>
+                <section id="parte1">
+                    <div class="contenedor">
+                       <article>
+                        <a href="{% url 'vista_cabo' %}"> <img src="{% static 'imagenes/CaboVerde.png' %}"> </a>
+                         <h4> Curso: 4ºA <br>
+                              Profe: Mirna Medina <br>
+                              País: Cabo Verde </h4>
+                       </article>
+                       <article>
+                        <a href="{% url 'vista_hungria' %}"> <img src="{% static 'imagenes/Hungria.jpg' %}"> </a>
+                         <h4> Curso: 4ºB <br>
+                              Profe: Carmen Pérez / <br> Julia Benítez <br>
+                              País: Hungria
+                        </h4>
+                       </article>
+                    </div>
+                </section>
+                <section id="parte1">
+                    <div class="contenedor">
+                        <article>
+                            <a href="{% url 'vista_argentina' %}"> <img src="{% static 'imagenes/Argentina.jpg' %}"> </a>
+                             <h4> Curso: 5ºA <br>
+                                  Profe: Laura Opperman <br>
+                                  País: Argentina
+                            </h4>
+                           </article>
+                           <article>
+                            <a href="{% url 'vista_marino' %}"> <img src="{% static 'imagenes/SanMarino.png' %}"> </a>
+                             <h4>Curso: 5ºB <br>
+                                 Profe:  <br>
+                                 País: San Marino 
+                           </h4>
+                           </article>
+                        </div>
+                     </section>
+            </main>
+    </body>
+    </html>

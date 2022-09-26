@@ -1,0 +1,19 @@
+#parte1 h4 {
+    text-align: center;
+}
+
+#parte1 .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#parte1 article {
+    margin: 20px;
+}
+
+#parte1 img {
+    width: 100%;
+    max-width: 280px;
+    height: 80%;
+}
