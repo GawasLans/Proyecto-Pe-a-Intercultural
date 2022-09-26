@@ -154,4 +154,8 @@ def vista_marino(request):
 def vista_etiopia(request):
     vista_etiopia = get_object_or_404
     return render(request, 'blog/paises/etiopia.html', {})
+
+def vista_canada(request):
+    vista_canada = get_object_or_404
+    return render(request, 'blog/paises/canada.html', {})
 # Create your views here.

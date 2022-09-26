@@ -62,7 +62,6 @@ footer .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: rgb(2, 30, 109);
     font-family: 'Bungee Spice', cursive;
 }
 
@@ -125,3 +124,4 @@ footer .capsula {
 #boton {
     cursor: pointer;
 }
+

@@ -35,4 +35,5 @@ urlpatterns = [
     path('Argentina', views.vista_argentina, name='vista_argentina'),
     path('SanMarino', views.vista_marino, name='vista_marino'),
     path('Etiopia', views.vista_etiopia, name='vista_etiopia'),
+    path('Canada', views.vista_canada, name='vista_canada'),
 ]
